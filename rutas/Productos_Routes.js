@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', ProductoController.getAllCategorias);
 
-router.post('/', ProductoController.createProducto);
+router.post('/', validarCategoria, ProductoController.createProducto);
 
 
 
